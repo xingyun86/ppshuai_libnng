@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6D613401-8055-3577-88CB-A493A322ADB6}</ProjectGuid>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>nng</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)$(Platform)\$(Configuration)\$(TargetName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)$(Platform)\$(Configuration)\$(TargetName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)$(Platform)\$(Configuration)\$(TargetName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)$(Platform)\$(Configuration)\$(TargetName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\nng\include;..\..\nng\src;..\..\thirdparty\libmbedtls\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NNG_STATIC_LIB;NNG_PRIVATE;NNG_SUPP_TLS;NNG_ENABLE_STATS;NNG_LITTLE_ENDIAN;NNG_PLATFORM_WINDOWS;_CRT_SECURE_NO_WARNINGS;_CRT_RAND_S;_WIN32_WINNT=0x0600;NNG_HAVE_CONDVAR=1;NNG_HAVE_SNPRINTF=1;NNG_HAVE_STRNLEN=1;NNG_HAVE_BUS0;NNG_HAVE_PAIR0;NNG_HAVE_PAIR1;NNG_HAVE_PUSH0;NNG_HAVE_PULL0;NNG_HAVE_PUB0;NNG_HAVE_SUB0;NNG_HAVE_REQ0;NNG_HAVE_REP0;NNG_HAVE_SURVEYOR0;NNG_HAVE_RESPONDENT0;NNG_TRANSPORT_INPROC;NNG_TRANSPORT_IPC;NNG_TRANSPORT_TCP;NNG_TRANSPORT_TLS;NNG_TRANSPORT_WS;NNG_TRANSPORT_WSS;NNG_SUPP_HTTP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;NNG_STATIC_LIB;NNG_PRIVATE;NNG_SUPP_TLS;NNG_ENABLE_STATS;NNG_LITTLE_ENDIAN;NNG_PLATFORM_WINDOWS;_CRT_SECURE_NO_WARNINGS;_CRT_RAND_S;_WIN32_WINNT=0x0600;NNG_HAVE_CONDVAR=1;NNG_HAVE_SNPRINTF=1;NNG_HAVE_STRNLEN=1;NNG_HAVE_BUS0;NNG_HAVE_PAIR0;NNG_HAVE_PAIR1;NNG_HAVE_PUSH0;NNG_HAVE_PULL0;NNG_HAVE_PUB0;NNG_HAVE_SUB0;NNG_HAVE_REQ0;NNG_HAVE_REP0;NNG_HAVE_SURVEYOR0;NNG_HAVE_RESPONDENT0;NNG_TRANSPORT_INPROC;NNG_TRANSPORT_IPC;NNG_TRANSPORT_TCP;NNG_TRANSPORT_TLS;NNG_TRANSPORT_WS;NNG_TRANSPORT_WSS;NNG_SUPP_HTTP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\nng\include;..\..\nng\src;..\..\thirdparty\libmbedtls\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\nng\include;..\..\nng\src;..\..\thirdparty\libmbedtls\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\nng\include;..\..\nng\src;..\..\thirdparty\libmbedtls\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NNG_STATIC_LIB;NNG_PRIVATE;NNG_SUPP_TLS;NNG_ENABLE_STATS;NNG_LITTLE_ENDIAN;NNG_PLATFORM_WINDOWS;_CRT_SECURE_NO_WARNINGS;_CRT_RAND_S;_WIN32_WINNT=0x0600;NNG_HAVE_CONDVAR=1;NNG_HAVE_SNPRINTF=1;NNG_HAVE_STRNLEN=1;NNG_HAVE_BUS0;NNG_HAVE_PAIR0;NNG_HAVE_PAIR1;NNG_HAVE_PUSH0;NNG_HAVE_PULL0;NNG_HAVE_PUB0;NNG_HAVE_SUB0;NNG_HAVE_REQ0;NNG_HAVE_REP0;NNG_HAVE_SURVEYOR0;NNG_HAVE_RESPONDENT0;NNG_TRANSPORT_INPROC;NNG_TRANSPORT_IPC;NNG_TRANSPORT_TCP;NNG_TRANSPORT_TLS;NNG_TRANSPORT_WS;NNG_TRANSPORT_WSS;NNG_SUPP_HTTP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;NNG_STATIC_LIB;NNG_PRIVATE;NNG_SUPP_TLS;NNG_ENABLE_STATS;NNG_LITTLE_ENDIAN;NNG_PLATFORM_WINDOWS;_CRT_SECURE_NO_WARNINGS;_CRT_RAND_S;_WIN32_WINNT=0x0600;NNG_HAVE_CONDVAR=1;NNG_HAVE_SNPRINTF=1;NNG_HAVE_STRNLEN=1;NNG_HAVE_BUS0;NNG_HAVE_PAIR0;NNG_HAVE_PAIR1;NNG_HAVE_PUSH0;NNG_HAVE_PULL0;NNG_HAVE_PUB0;NNG_HAVE_SUB0;NNG_HAVE_REQ0;NNG_HAVE_REP0;NNG_HAVE_SURVEYOR0;NNG_HAVE_RESPONDENT0;NNG_TRANSPORT_INPROC;NNG_TRANSPORT_IPC;NNG_TRANSPORT_TCP;NNG_TRANSPORT_TLS;NNG_TRANSPORT_WS;NNG_TRANSPORT_WSS;NNG_SUPP_HTTP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\nng\include;..\..\nng\src;..\..\thirdparty\libmbedtls\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\nng\include;..\..\nng\src;..\..\thirdparty\libmbedtls\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\nng\include;..\..\nng\src;..\..\thirdparty\libmbedtls\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NNG_STATIC_LIB;NNG_PRIVATE;NNG_SUPP_TLS;NNG_ENABLE_STATS;NNG_LITTLE_ENDIAN;NNG_PLATFORM_WINDOWS;_CRT_SECURE_NO_WARNINGS;_CRT_RAND_S;_WIN32_WINNT=0x0600;NNG_HAVE_CONDVAR=1;NNG_HAVE_SNPRINTF=1;NNG_HAVE_STRNLEN=1;NNG_HAVE_BUS0;NNG_HAVE_PAIR0;NNG_HAVE_PAIR1;NNG_HAVE_PUSH0;NNG_HAVE_PULL0;NNG_HAVE_PUB0;NNG_HAVE_SUB0;NNG_HAVE_REQ0;NNG_HAVE_REP0;NNG_HAVE_SURVEYOR0;NNG_HAVE_RESPONDENT0;NNG_TRANSPORT_INPROC;NNG_TRANSPORT_IPC;NNG_TRANSPORT_TCP;NNG_TRANSPORT_TLS;NNG_TRANSPORT_WS;NNG_TRANSPORT_WSS;NNG_SUPP_HTTP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NNG_STATIC_LIB;NNG_PRIVATE;NNG_SUPP_TLS;NNG_ENABLE_STATS;NNG_LITTLE_ENDIAN;NNG_PLATFORM_WINDOWS;_CRT_SECURE_NO_WARNINGS;_CRT_RAND_S;_WIN32_WINNT=0x0600;NNG_HAVE_CONDVAR=1;NNG_HAVE_SNPRINTF=1;NNG_HAVE_STRNLEN=1;NNG_HAVE_BUS0;NNG_HAVE_PAIR0;NNG_HAVE_PAIR1;NNG_HAVE_PUSH0;NNG_HAVE_PULL0;NNG_HAVE_PUB0;NNG_HAVE_SUB0;NNG_HAVE_REQ0;NNG_HAVE_REP0;NNG_HAVE_SURVEYOR0;NNG_HAVE_RESPONDENT0;NNG_TRANSPORT_INPROC;NNG_TRANSPORT_IPC;NNG_TRANSPORT_TCP;NNG_TRANSPORT_TLS;NNG_TRANSPORT_WS;NNG_TRANSPORT_WSS;NNG_SUPP_HTTP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\nng\include;..\..\nng\src;..\..\thirdparty\libmbedtls\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\nng\include;..\..\nng\src;..\..\thirdparty\libmbedtls\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\nng\include;..\..\nng\src;..\..\thirdparty\libmbedtls\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NNG_STATIC_LIB;NNG_PRIVATE;NNG_SUPP_TLS;NNG_ENABLE_STATS;NNG_LITTLE_ENDIAN;NNG_PLATFORM_WINDOWS;_CRT_SECURE_NO_WARNINGS;_CRT_RAND_S;_WIN32_WINNT=0x0600;NNG_HAVE_CONDVAR=1;NNG_HAVE_SNPRINTF=1;NNG_HAVE_STRNLEN=1;NNG_HAVE_BUS0;NNG_HAVE_PAIR0;NNG_HAVE_PAIR1;NNG_HAVE_PUSH0;NNG_HAVE_PULL0;NNG_HAVE_PUB0;NNG_HAVE_SUB0;NNG_HAVE_REQ0;NNG_HAVE_REP0;NNG_HAVE_SURVEYOR0;NNG_HAVE_RESPONDENT0;NNG_TRANSPORT_INPROC;NNG_TRANSPORT_IPC;NNG_TRANSPORT_TCP;NNG_TRANSPORT_TLS;NNG_TRANSPORT_WS;NNG_TRANSPORT_WSS;NNG_SUPP_HTTP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NNG_STATIC_LIB;NNG_PRIVATE;NNG_SUPP_TLS;NNG_ENABLE_STATS;NNG_LITTLE_ENDIAN;NNG_PLATFORM_WINDOWS;_CRT_SECURE_NO_WARNINGS;_CRT_RAND_S;_WIN32_WINNT=0x0600;NNG_HAVE_CONDVAR=1;NNG_HAVE_SNPRINTF=1;NNG_HAVE_STRNLEN=1;NNG_HAVE_BUS0;NNG_HAVE_PAIR0;NNG_HAVE_PAIR1;NNG_HAVE_PUSH0;NNG_HAVE_PULL0;NNG_HAVE_PUB0;NNG_HAVE_SUB0;NNG_HAVE_REQ0;NNG_HAVE_REP0;NNG_HAVE_SURVEYOR0;NNG_HAVE_RESPONDENT0;NNG_TRANSPORT_INPROC;NNG_TRANSPORT_IPC;NNG_TRANSPORT_TCP;NNG_TRANSPORT_TLS;NNG_TRANSPORT_WS;NNG_TRANSPORT_WSS;NNG_SUPP_HTTP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\nng\include;..\..\nng\src;..\..\thirdparty\libmbedtls\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\nng\include;..\..\nng\src;..\..\thirdparty\libmbedtls\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\nng\src\nng.c" />
+    <ClInclude Include="..\..\nng\include\nng\nng.h" />
+    <ClInclude Include="..\..\nng\src\core\defs.h" />
+    <ClCompile Include="..\..\nng\src\core\aio.c" />
+    <ClInclude Include="..\..\nng\src\core\aio.h" />
+    <ClCompile Include="..\..\nng\src\core\clock.c" />
+    <ClInclude Include="..\..\nng\src\core\clock.h" />
+    <ClCompile Include="..\..\nng\src\core\device.c" />
+    <ClInclude Include="..\..\nng\src\core\device.h" />
+    <ClCompile Include="..\..\nng\src\core\dialer.c" />
+    <ClInclude Include="..\..\nng\src\core\dialer.h" />
+    <ClCompile Include="..\..\nng\src\core\file.c" />
+    <ClInclude Include="..\..\nng\src\core\file.h" />
+    <ClCompile Include="..\..\nng\src\core\idhash.c" />
+    <ClInclude Include="..\..\nng\src\core\idhash.h" />
+    <ClCompile Include="..\..\nng\src\core\init.c" />
+    <ClInclude Include="..\..\nng\src\core\init.h" />
+    <ClCompile Include="..\..\nng\src\core\list.c" />
+    <ClInclude Include="..\..\nng\src\core\list.h" />
+    <ClCompile Include="..\..\nng\src\core\listener.c" />
+    <ClInclude Include="..\..\nng\src\core\listener.h" />
+    <ClCompile Include="..\..\nng\src\core\message.c" />
+    <ClInclude Include="..\..\nng\src\core\message.h" />
+    <ClCompile Include="..\..\nng\src\core\msgqueue.c" />
+    <ClInclude Include="..\..\nng\src\core\msgqueue.h" />
+    <ClInclude Include="..\..\nng\src\core\nng_impl.h" />
+    <ClCompile Include="..\..\nng\src\core\options.c">
+      <ObjectFileName>$(IntDir)/core/options.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="..\..\nng\src\core\options.h" />
+    <ClCompile Include="..\..\nng\src\core\pollable.c" />
+    <ClInclude Include="..\..\nng\src\core\pollable.h" />
+    <ClCompile Include="..\..\nng\src\core\panic.c" />
+    <ClInclude Include="..\..\nng\src\core\panic.h" />
+    <ClCompile Include="..\..\nng\src\core\pipe.c" />
+    <ClInclude Include="..\..\nng\src\core\pipe.h" />
+    <ClInclude Include="..\..\nng\src\core\platform.h" />
+    <ClCompile Include="..\..\nng\src\core\protocol.c" />
+    <ClInclude Include="..\..\nng\src\core\protocol.h" />
+    <ClCompile Include="..\..\nng\src\core\random.c" />
+    <ClInclude Include="..\..\nng\src\core\random.h" />
+    <ClCompile Include="..\..\nng\src\core\reap.c" />
+    <ClInclude Include="..\..\nng\src\core\reap.h" />
+    <ClCompile Include="..\..\nng\src\core\socket.c" />
+    <ClInclude Include="..\..\nng\src\core\socket.h" />
+    <ClInclude Include="..\..\nng\src\core\sockimpl.h" />
+    <ClCompile Include="..\..\nng\src\core\stats.c" />
+    <ClInclude Include="..\..\nng\src\core\stats.h" />
+    <ClCompile Include="..\..\nng\src\core\strs.c" />
+    <ClInclude Include="..\..\nng\src\core\strs.h" />
+    <ClCompile Include="..\..\nng\src\core\taskq.c" />
+    <ClInclude Include="..\..\nng\src\core\taskq.h" />
+    <ClCompile Include="..\..\nng\src\core\thread.c" />
+    <ClInclude Include="..\..\nng\src\core\thread.h" />
+    <ClCompile Include="..\..\nng\src\core\timer.c" />
+    <ClInclude Include="..\..\nng\src\core\timer.h" />
+    <ClCompile Include="..\..\nng\src\core\transport.c" />
+    <ClInclude Include="..\..\nng\src\core\transport.h" />
+    <ClCompile Include="..\..\nng\src\core\url.c" />
+    <ClInclude Include="..\..\nng\src\core\url.h" />
+    <ClInclude Include="..\..\nng\src\platform\windows\win_impl.h" />
+    <ClInclude Include="..\..\nng\src\platform\windows\win_ipc.h" />
+    <ClInclude Include="..\..\nng\src\platform\windows\win_tcp.h" />
+    <ClCompile Include="..\..\nng\src\platform\windows\win_clock.c" />
+    <ClCompile Include="..\..\nng\src\platform\windows\win_debug.c" />
+    <ClCompile Include="..\..\nng\src\platform\windows\win_file.c" />
+    <ClCompile Include="..\..\nng\src\platform\windows\win_io.c" />
+    <ClCompile Include="..\..\nng\src\platform\windows\win_ipcconn.c" />
+    <ClCompile Include="..\..\nng\src\platform\windows\win_ipcdial.c" />
+    <ClCompile Include="..\..\nng\src\platform\windows\win_ipclisten.c" />
+    <ClCompile Include="..\..\nng\src\platform\windows\win_pipe.c" />
+    <ClCompile Include="..\..\nng\src\platform\windows\win_rand.c" />
+    <ClCompile Include="..\..\nng\src\platform\windows\win_resolv.c" />
+    <ClCompile Include="..\..\nng\src\platform\windows\win_sockaddr.c" />
+    <ClCompile Include="..\..\nng\src\platform\windows\win_tcp.c" />
+    <ClCompile Include="..\..\nng\src\platform\windows\win_tcpconn.c" />
+    <ClCompile Include="..\..\nng\src\platform\windows\win_tcpdial.c" />
+    <ClCompile Include="..\..\nng\src\platform\windows\win_tcplisten.c" />
+    <ClCompile Include="..\..\nng\src\platform\windows\win_thread.c" />
+    <ClCompile Include="..\..\nng\src\platform\windows\win_udp.c" />
+    <ClCompile Include="..\..\nng\src\compat\nanomsg\nn.c" />
+    <ClCompile Include="..\..\nng\src\protocol\bus0\bus.c" />
+    <ClInclude Include="..\..\nng\include\nng\protocol\bus0\bus.h" />
+    <ClCompile Include="..\..\nng\src\protocol\pair0\pair.c">
+      <ObjectFileName>$(IntDir)/protocol/pair0/pair.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="..\..\nng\include\nng\protocol\pair0\pair.h" />
+    <ClCompile Include="..\..\nng\src\protocol\pair1\pair.c">
+      <ObjectFileName>$(IntDir)/protocol/pair1/pair.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="..\..\nng\include\nng\protocol\pair1\pair.h" />
+    <ClCompile Include="..\..\nng\src\protocol\pipeline0\push.c" />
+    <ClInclude Include="..\..\nng\include\nng\protocol\pipeline0\push.h" />
+    <ClCompile Include="..\..\nng\src\protocol\pipeline0\pull.c" />
+    <ClInclude Include="..\..\nng\include\nng\protocol\pipeline0\pull.h" />
+    <ClCompile Include="..\..\nng\src\protocol\pubsub0\pub.c" />
+    <ClInclude Include="..\..\nng\include\nng\protocol\pubsub0\pub.h" />
+    <ClCompile Include="..\..\nng\src\protocol\pubsub0\sub.c" />
+    <ClInclude Include="..\..\nng\include\nng\protocol\pubsub0\sub.h" />
+    <ClCompile Include="..\..\nng\src\protocol\reqrep0\req.c" />
+    <ClCompile Include="..\..\nng\src\protocol\reqrep0\xreq.c" />
+    <ClInclude Include="..\..\nng\include\nng\protocol\reqrep0\req.h" />
+    <ClCompile Include="..\..\nng\src\protocol\reqrep0\rep.c" />
+    <ClCompile Include="..\..\nng\src\protocol\reqrep0\xrep.c" />
+    <ClInclude Include="..\..\nng\include\nng\protocol\reqrep0\rep.h" />
+    <ClCompile Include="..\..\nng\src\protocol\survey0\survey.c" />
+    <ClCompile Include="..\..\nng\src\protocol\survey0\xsurvey.c" />
+    <ClInclude Include="..\..\nng\include\nng\protocol\survey0\survey.h" />
+    <ClCompile Include="..\..\nng\src\protocol\survey0\respond.c" />
+    <ClCompile Include="..\..\nng\src\protocol\survey0\xrespond.c" />
+    <ClInclude Include="..\..\nng\include\nng\protocol\survey0\respond.h" />
+    <ClCompile Include="..\..\nng\src\transport\inproc\inproc.c" />
+    <ClInclude Include="..\..\nng\include\nng\transport\inproc\inproc.h" />
+    <ClCompile Include="..\..\nng\src\transport\ipc\ipc.c" />
+    <ClInclude Include="..\..\nng\include\nng\transport\ipc\ipc.h" />
+    <ClCompile Include="..\..\nng\src\transport\tcp\tcp.c">
+      <ObjectFileName>$(IntDir)/transport/tcp/tcp.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="..\..\nng\include\nng\transport\tcp\tcp.h" />
+    <ClCompile Include="..\..\nng\src\transport\tls\tls.c">
+      <ObjectFileName>$(IntDir)/transport/tls/tls.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="..\..\nng\include\nng\transport\tls\tls.h" />
+    <ClCompile Include="..\..\nng\src\transport\ws\websocket.c">
+      <ObjectFileName>$(IntDir)/transport/ws/websocket.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="..\..\nng\include\nng\transport\ws\websocket.h" />
+    <ClCompile Include="..\..\nng\src\supplemental\base64\base64.c" />
+    <ClInclude Include="..\..\nng\src\supplemental\base64\base64.h" />
+    <ClCompile Include="..\..\nng\src\supplemental\http\http_public.c" />
+    <ClInclude Include="..\..\nng\include\nng\supplemental\http\http.h" />
+    <ClInclude Include="..\..\nng\src\supplemental\http\http_api.h" />
+    <ClCompile Include="..\..\nng\src\supplemental\http\http_client.c" />
+    <ClCompile Include="..\..\nng\src\supplemental\http\http_chunk.c" />
+    <ClCompile Include="..\..\nng\src\supplemental\http\http_conn.c" />
+    <ClCompile Include="..\..\nng\src\supplemental\http\http_msg.c" />
+    <ClCompile Include="..\..\nng\src\supplemental\http\http_server.c" />
+    <ClCompile Include="..\..\nng\src\supplemental\sha1\sha1.c" />
+    <ClInclude Include="..\..\nng\src\supplemental\sha1\sha1.h" />
+    <ClCompile Include="..\..\nng\src\supplemental\tcp\tcp.c">
+      <ObjectFileName>$(IntDir)/supplemental/tcp/tcp.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="..\..\nng\include\nng\supplemental\tcp\tcp.h" />
+    <ClInclude Include="..\..\nng\include\nng\supplemental\tls\tls.h" />
+    <ClCompile Include="..\..\nng\src\supplemental\tls\mbedtls\tls.c">
+      <ObjectFileName>$(IntDir)/supplemental/tls/mbedtls/tls.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\supplemental\util\options.c">
+      <ObjectFileName>$(IntDir)/supplemental/util/options.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="..\..\nng\include\nng\supplemental\util\options.h" />
+    <ClCompile Include="..\..\nng\src\supplemental\util\platform.c" />
+    <ClInclude Include="..\..\nng\include\nng\supplemental\util\platform.h" />
+    <ClCompile Include="..\..\nng\src\supplemental\websocket\websocket.c">
+      <ObjectFileName>$(IntDir)/supplemental/websocket/websocket.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="..\..\nng\src\supplemental\websocket\websocket.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

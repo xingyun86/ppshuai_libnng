@@ -1,0 +1,561 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\nng\src\nng.c">
+      <Filter>nng.c</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\core\aio.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\core\clock.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\core\device.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\core\dialer.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\core\file.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\core\idhash.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\core\init.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\core\list.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\core\listener.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\core\message.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\core\msgqueue.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\core\options.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\core\pollable.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\core\panic.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\core\pipe.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\core\protocol.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\core\random.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\core\reap.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\core\socket.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\core\stats.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\core\strs.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\core\taskq.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\core\thread.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\core\timer.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\core\transport.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\core\url.c">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\platform\windows\win_clock.c">
+      <Filter>platform\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\platform\windows\win_debug.c">
+      <Filter>platform\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\platform\windows\win_file.c">
+      <Filter>platform\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\platform\windows\win_io.c">
+      <Filter>platform\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\platform\windows\win_ipcconn.c">
+      <Filter>platform\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\platform\windows\win_ipcdial.c">
+      <Filter>platform\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\platform\windows\win_ipclisten.c">
+      <Filter>platform\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\platform\windows\win_pipe.c">
+      <Filter>platform\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\platform\windows\win_rand.c">
+      <Filter>platform\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\platform\windows\win_resolv.c">
+      <Filter>platform\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\platform\windows\win_sockaddr.c">
+      <Filter>platform\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\platform\windows\win_tcp.c">
+      <Filter>platform\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\platform\windows\win_tcpconn.c">
+      <Filter>platform\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\platform\windows\win_tcpdial.c">
+      <Filter>platform\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\platform\windows\win_tcplisten.c">
+      <Filter>platform\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\platform\windows\win_thread.c">
+      <Filter>platform\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\platform\windows\win_udp.c">
+      <Filter>platform\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\compat\nanomsg\nn.c">
+      <Filter>compat\nanomsg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\protocol\bus0\bus.c">
+      <Filter>protocol\bus0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\protocol\pair0\pair.c">
+      <Filter>protocol\pair0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\protocol\pair1\pair.c">
+      <Filter>protocol\pair1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\protocol\pipeline0\push.c">
+      <Filter>protocol\pipeline0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\protocol\pipeline0\pull.c">
+      <Filter>protocol\pipeline0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\protocol\pubsub0\pub.c">
+      <Filter>protocol\pubsub0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\protocol\pubsub0\sub.c">
+      <Filter>protocol\pubsub0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\protocol\reqrep0\req.c">
+      <Filter>protocol\reqrep0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\protocol\reqrep0\xreq.c">
+      <Filter>protocol\reqrep0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\protocol\reqrep0\rep.c">
+      <Filter>protocol\reqrep0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\protocol\reqrep0\xrep.c">
+      <Filter>protocol\reqrep0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\protocol\survey0\survey.c">
+      <Filter>protocol\survey0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\protocol\survey0\xsurvey.c">
+      <Filter>protocol\survey0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\protocol\survey0\respond.c">
+      <Filter>protocol\survey0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\protocol\survey0\xrespond.c">
+      <Filter>protocol\survey0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\transport\inproc\inproc.c">
+      <Filter>transport\inproc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\transport\ipc\ipc.c">
+      <Filter>transport\ipc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\transport\tcp\tcp.c">
+      <Filter>transport\tcp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\transport\ws\websocket.c">
+      <Filter>transport\ws</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\supplemental\base64\base64.c">
+      <Filter>supplemental\base64</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\supplemental\http\http_public.c">
+      <Filter>supplemental\http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\supplemental\http\http_client.c">
+      <Filter>supplemental\http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\supplemental\http\http_chunk.c">
+      <Filter>supplemental\http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\supplemental\http\http_conn.c">
+      <Filter>supplemental\http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\supplemental\http\http_msg.c">
+      <Filter>supplemental\http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\supplemental\http\http_server.c">
+      <Filter>supplemental\http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\supplemental\sha1\sha1.c">
+      <Filter>supplemental\sha1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\supplemental\tcp\tcp.c">
+      <Filter>supplemental\tcp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\supplemental\util\options.c">
+      <Filter>supplemental\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\supplemental\util\platform.c">
+      <Filter>supplemental\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\supplemental\websocket\websocket.c">
+      <Filter>supplemental\websocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\nng\src\transport\tls\tls.c" />
+    <ClCompile Include="..\..\nng\src\supplemental\tls\mbedtls\tls.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\nng\include\nng\nng.h">
+      <Filter>..\include\nng</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\src\core\defs.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\src\core\aio.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\src\core\clock.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\src\core\device.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\src\core\dialer.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\src\core\file.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\src\core\idhash.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\src\core\init.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\src\core\list.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\src\core\listener.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\src\core\message.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\src\core\msgqueue.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\src\core\nng_impl.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\src\core\options.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\src\core\pollable.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\src\core\panic.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\src\core\pipe.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\src\core\platform.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\src\core\protocol.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\src\core\random.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\src\core\reap.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\src\core\socket.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\src\core\sockimpl.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\src\core\stats.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\src\core\strs.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\src\core\taskq.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\src\core\thread.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\src\core\timer.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\src\core\transport.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\src\core\url.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\src\platform\windows\win_impl.h">
+      <Filter>platform\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\src\platform\windows\win_ipc.h">
+      <Filter>platform\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\src\platform\windows\win_tcp.h">
+      <Filter>platform\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\include\nng\protocol\bus0\bus.h">
+      <Filter>..\include\nng\protocol\bus0</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\include\nng\protocol\pair0\pair.h">
+      <Filter>..\include\nng\protocol\pair0</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\include\nng\protocol\pair1\pair.h">
+      <Filter>..\include\nng\protocol\pair1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\include\nng\protocol\pipeline0\push.h">
+      <Filter>..\include\nng\protocol\pipeline0</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\include\nng\protocol\pipeline0\pull.h">
+      <Filter>..\include\nng\protocol\pipeline0</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\include\nng\protocol\pubsub0\pub.h">
+      <Filter>..\include\nng\protocol\pubsub0</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\include\nng\protocol\pubsub0\sub.h">
+      <Filter>..\include\nng\protocol\pubsub0</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\include\nng\protocol\reqrep0\req.h">
+      <Filter>..\include\nng\protocol\reqrep0</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\include\nng\protocol\reqrep0\rep.h">
+      <Filter>..\include\nng\protocol\reqrep0</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\include\nng\protocol\survey0\survey.h">
+      <Filter>..\include\nng\protocol\survey0</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\include\nng\protocol\survey0\respond.h">
+      <Filter>..\include\nng\protocol\survey0</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\include\nng\transport\inproc\inproc.h">
+      <Filter>..\include\nng\transport\inproc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\include\nng\transport\ipc\ipc.h">
+      <Filter>..\include\nng\transport\ipc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\include\nng\transport\tcp\tcp.h">
+      <Filter>..\include\nng\transport\tcp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\include\nng\transport\ws\websocket.h">
+      <Filter>..\include\nng\transport\ws</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\src\supplemental\base64\base64.h">
+      <Filter>supplemental\base64</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\include\nng\supplemental\http\http.h">
+      <Filter>..\include\nng\supplemental\http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\src\supplemental\http\http_api.h">
+      <Filter>supplemental\http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\src\supplemental\sha1\sha1.h">
+      <Filter>supplemental\sha1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\include\nng\supplemental\tcp\tcp.h">
+      <Filter>..\include\nng\supplemental\tcp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\include\nng\supplemental\tls\tls.h">
+      <Filter>..\include\nng\supplemental\tls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\include\nng\supplemental\util\options.h">
+      <Filter>..\include\nng\supplemental\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\include\nng\supplemental\util\platform.h">
+      <Filter>..\include\nng\supplemental\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\src\supplemental\websocket\websocket.h">
+      <Filter>supplemental\websocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\nng\include\nng\transport\tls\tls.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="..">
+      <UniqueIdentifier>{295E1317-51FF-3AFF-94F8-53812E4CCBA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\include">
+      <UniqueIdentifier>{529FE6E9-E36E-3CF7-8CA0-61F9E3C64513}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\include\nng">
+      <UniqueIdentifier>{EF4B816E-A7DD-3655-A9E4-160DE58F4F7E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\include\nng\protocol">
+      <UniqueIdentifier>{E6A82B49-0014-3FBC-A2CE-0B9A06CF2AD3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\include\nng\protocol\bus0">
+      <UniqueIdentifier>{EF5E1638-B5A1-32A9-88D8-8EAE4C741AB2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\include\nng\protocol\pair0">
+      <UniqueIdentifier>{59A0384A-4808-384D-8C94-D68125736A6B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\include\nng\protocol\pair1">
+      <UniqueIdentifier>{F2838B43-DFF8-3875-AE1F-C655C048B6C6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\include\nng\protocol\pipeline0">
+      <UniqueIdentifier>{85A88177-B34A-38D5-97AC-240C989BB67A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\include\nng\protocol\pubsub0">
+      <UniqueIdentifier>{2FA7AF6B-9593-3990-8A2F-CF8E2C487408}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\include\nng\protocol\reqrep0">
+      <UniqueIdentifier>{17356C16-352A-359A-8894-C68E2F41A619}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\include\nng\protocol\survey0">
+      <UniqueIdentifier>{80C02AFD-ACFA-3E1F-8292-BC5DDEC2019C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\include\nng\supplemental">
+      <UniqueIdentifier>{2AC6B415-0245-358D-A65B-B04345CFB4F8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\include\nng\supplemental\http">
+      <UniqueIdentifier>{A294942E-7478-3D5E-8C7D-6D845AB5F6F4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\include\nng\supplemental\tcp">
+      <UniqueIdentifier>{371765CF-CEE0-3BF8-A2A6-FB9D4B394EFD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\include\nng\supplemental\tls">
+      <UniqueIdentifier>{4A452EC5-1DC0-3809-8660-28C96E1C08DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\include\nng\supplemental\util">
+      <UniqueIdentifier>{82E01D9F-0D08-317C-9ED4-6C19190A3B07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\include\nng\transport">
+      <UniqueIdentifier>{40A73CF2-5035-3183-B209-7E094F432502}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\include\nng\transport\inproc">
+      <UniqueIdentifier>{9BAE7B14-9BCC-3256-81B9-EFF74072E6BB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\include\nng\transport\ipc">
+      <UniqueIdentifier>{16FF4146-E80A-33AE-897F-FC47BEAE98D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\include\nng\transport\tcp">
+      <UniqueIdentifier>{0211BFC6-B374-3374-80BC-AFB8F4F5BD8C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\include\nng\transport\ws">
+      <UniqueIdentifier>{6730EF9F-1135-3A37-9A0D-10260AD6CBA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="compat">
+      <UniqueIdentifier>{EC42A6B5-E71B-3680-995F-270FAF5800C7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="compat\nanomsg">
+      <UniqueIdentifier>{095C853A-188E-3398-86CE-965C36A0432A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core">
+      <UniqueIdentifier>{9BE078FC-58ED-3298-A3A6-EDF17B834F9C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nng.c">
+      <UniqueIdentifier>{1C6616AD-2A51-33F6-9531-DBE8ADE0A39E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="platform">
+      <UniqueIdentifier>{886FEC7A-ADC4-31D4-A9AA-79B59A91AC53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="platform\windows">
+      <UniqueIdentifier>{935BF3CE-E562-35A0-96AE-1D915ECAC84C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol">
+      <UniqueIdentifier>{D0321939-0161-3ABD-9DBC-AAC03C645D95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\bus0">
+      <UniqueIdentifier>{C8885D4B-E0BE-3598-80B1-6342E1709ED2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\pair0">
+      <UniqueIdentifier>{9628C9CD-892E-327E-B47F-07A331977851}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\pair1">
+      <UniqueIdentifier>{E45B7327-6CDE-3398-B308-E74ED1194FDA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\pipeline0">
+      <UniqueIdentifier>{8C3BC98D-4DD2-3D2D-BDFE-538A00A5E432}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\pubsub0">
+      <UniqueIdentifier>{B88F8C70-FDF3-3C71-BA3B-AF488BAC35E1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\reqrep0">
+      <UniqueIdentifier>{310B1B60-6ED0-36ED-A88B-A3ACC4E42102}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\survey0">
+      <UniqueIdentifier>{24772C5A-0D64-39A0-B3FE-1A6D63E36987}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="supplemental">
+      <UniqueIdentifier>{EE0F692F-0D76-3A59-9B9C-041B4DC5DC13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="supplemental\base64">
+      <UniqueIdentifier>{929227E3-307A-3BBC-A689-7F47894A1A0C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="supplemental\http">
+      <UniqueIdentifier>{46E661F0-D7CF-3783-8BDB-1917B6977B80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="supplemental\sha1">
+      <UniqueIdentifier>{39498779-317C-39DD-834E-3060CE4237E9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="supplemental\tcp">
+      <UniqueIdentifier>{0CB05A9E-EA62-3372-AE71-612F819830D5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="supplemental\tls">
+      <UniqueIdentifier>{67D8DF75-460C-3AC6-ACDD-E8E59EEDA224}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="supplemental\tls\none">
+      <UniqueIdentifier>{E51E654E-07AA-3D1A-88AD-033358AA61C3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="supplemental\util">
+      <UniqueIdentifier>{24743601-9BDF-304D-916E-19CC11ABE994}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="supplemental\websocket">
+      <UniqueIdentifier>{AB1F537D-B558-3FAD-AE5D-78F752144398}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="transport">
+      <UniqueIdentifier>{C6EFAFE3-9B34-36D3-8C60-CE8D322379EB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="transport\inproc">
+      <UniqueIdentifier>{3DB6C7CB-8514-3603-A881-E7E019FDA656}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="transport\ipc">
+      <UniqueIdentifier>{3404348D-7D72-361F-8A55-1D62831C239E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="transport\tcp">
+      <UniqueIdentifier>{CAF401E1-0798-3EDA-8CD3-1B94BACFB1DD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="transport\ws">
+      <UniqueIdentifier>{FC43F771-A4F2-35B0-BC48-1BF5788719C0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
