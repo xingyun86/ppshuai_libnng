@@ -116,6 +116,7 @@
       </IgnoreSpecificDefaultLibraries>
       <ImportLibrary>$(OutDir)$(TargetName).LIB</ImportLibrary>
       <SubSystem>Console</SubSystem>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
@@ -156,6 +157,7 @@
       </IgnoreSpecificDefaultLibraries>
       <ImportLibrary>$(OutDir)$(TargetName).LIB</ImportLibrary>
       <SubSystem>Console</SubSystem>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
@@ -196,6 +198,7 @@
       </IgnoreSpecificDefaultLibraries>
       <ImportLibrary>$(OutDir)$(TargetName).LIB</ImportLibrary>
       <SubSystem>Console</SubSystem>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
@@ -236,6 +239,7 @@
       </IgnoreSpecificDefaultLibraries>
       <ImportLibrary>$(OutDir)$(TargetName).LIB</ImportLibrary>
       <SubSystem>Console</SubSystem>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
