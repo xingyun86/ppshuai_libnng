@@ -124,24 +124,30 @@ main(int argc, char **argv)
 
 	// Allocate a buffer to receive the body data.
 	data = malloc(len);
-
-	// Set up a single iov to point to the buffer.
-	iov.iov_len = len;
-	iov.iov_buf = data;
-
-	// Following never fails with fewer than 5 elements.
-	nng_aio_set_iov(aio, 1, &iov);
-
-	// Now attempt to receive the data.
-	nng_http_conn_read_all(conn, aio);
-
-	// Wait for it to complete.
-	nng_aio_wait(aio);
-
-	if ((rv = nng_aio_result(aio)) != 0) {
-		fatal(rv);
+	if(data)
+	{
+		// Set up a single iov to point to the buffer.
+		iov.iov_len = len;
+		iov.iov_buf = data;
+	
+		// Following never fails with fewer than 5 elements.
+		nng_aio_set_iov(aio, 1, &iov);
+	
+		// Now attempt to receive the data.
+		nng_http_conn_read_all(conn, aio);
+	
+		// Wait for it to complete.
+		nng_aio_wait(aio);
+	
+		if ((rv = nng_aio_result(aio)) != 0) {
+			free(data);
+			fatal(rv);
+		}
+	
+		fwrite(data, 1, len, stdout);
+		
+		free(data);
 	}
-
-	fwrite(data, 1, len, stdout);
+	
 	return (0);
 }
